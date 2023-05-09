@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <aside>
+      <div>
+        <img src="./images/odin-lined.png" alt="Odin Logo">
+        <h1>ODIN</h1>
+      </div>
+    </aside>
+
+    <main>
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+      <br>
+      Sign up <em>now</em> to get started
+      </p>
+
+      <p>You <em>know</em> you want to.</p>
+
+      <form action="#">
+        <div>
+          <h2>Let's do this!</h2>
+          <div>
+            <label for="firstName">
+              First Name
+              <input required minlength="3" id="firstName" type="text">
+            </label>
+    
+            <label for="lastName">
+              Last Name
+              <input required minlength="3" id="lastName" type="text">
+            </label>
+    
+            <label for="email">
+              Email Address
+              <input required minlength="5" id="email" type="email">
+            </label>
+    
+            <label for="phoneNumber">
+              Phone Number
+              <input required id="phoneNumber" type="tel">
+            </label>
+    
+            <label for="password">
+              Password
+              <input pattern='^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$' required id="password" type="password">
+            </label>
+          
+            <label for="passwordConfirm">
+              Confirm Password
+              <input pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required id="passwordConfirm" type="password">
+            </label>
+          </div>
+        </div>
+
+        <button type="reset">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </main>
+  </body>
+</html>
